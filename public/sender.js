@@ -1,5 +1,5 @@
 
-const socket = io('https://vshare-gilt.vercel.app');
+const socket = io('https://vshare-duj6.onrender.com/');
 let roomId;
 let receiverConnected = false;
 let fileSelected = false;
