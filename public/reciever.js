@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io('https://vshare-gilt.vercel.app');
 
 let fileShare = {
   metadata: null,
