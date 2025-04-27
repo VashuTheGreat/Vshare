@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vshare - Sender</title>
+  <style>
+    /* Same tera styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      background-color: #ff7e5f;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:disabled {
+      background-color: #ffb199;
+      cursor: not-allowed;
+    }
+    button:hover:not(:disabled) {
+      background-color: #eb6841;
+    }
+    #room-id {
+      margin: 15px 0;
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+    }
+    input[type="file"] {
+      width: 100%;
+      margin: 15px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    input[type="file"]::-webkit-file-upload-button {
+      background: #ff7e5f;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    input[type="file"]::-webkit-file-upload-button:hover {
+      background: #eb6841;
+    }
+
+    #connected {
+      margin: 15px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #cf0519;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Vshare - Sender</h2>
+  <button id="create-room-btn">Create Room</button>
+  <div id="room-id">Room ID: </div>
+  <span id="connected">Receiver Not Connected</span>
+  <input type="file" id="file-input">
+  <button id="send-file-btn" disabled>Send File</button>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+
+
+
+
+<script src="./sender.js"></script>
+
+</body>
+</html>

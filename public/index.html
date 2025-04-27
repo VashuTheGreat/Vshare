@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vshare</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        
+        h1 {
+            color: #333;
+            margin-top: 50px;
+            font-size: 3em;
+            font-weight: 600;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.2em;
+            margin: 20px 0;
+            line-height: 1.5;
+        }
+
+        a {
+            font-size: 1.2em;
+            color: #fff;
+            text-decoration: none;
+            background-color: #ff7e5f;
+            padding: 14px 30px;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(255, 126, 95, 0.3);
+        }
+
+        a:hover {
+            background-color: #eb6841;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 126, 95, 0.5);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: #777;
+            font-size: 1em;
+        }
+
+        .card {
+            background: white;
+            padding: 50px 60px;
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 700px;
+            margin: 0 auto;
+            transform: translateY(-50px);
+            animation: slide-up 0.5s ease-out forwards;
+        }
+
+        .card h2 {
+            color: #333;
+            font-size: 2.5em;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Animation */
+        @keyframes slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .card {
+                padding: 30px 40px;
+            }
+
+            .card h2 {
+                font-size: 2em;
+            }
+
+            .card p {
+                font-size: 1em;
+            }
+
+            a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .card {
+                padding: 20px 30px;
+            }
+
+            .card h2 {
+                font-size: 1.8em;
+            }
+
+            .card p {
+                font-size: 0.9em;
+            }
+
+            a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+
+            footer p {
+                font-size: 0.8em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Welcome to Vshare</h2>
+        <p>Vshare is a simple and fast file sharing application that allows you to send and receive files effortlessly.</p>
+        <div>
+            <a href="sender.html" target="_blank">Send Files</a>
+            <a href="receiver.html" target="_blank">Receive Files</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Vshare. All rights reserved. | Crafted with 💖 by Our Team</p>
+    </footer>
+</body>
+</html>
